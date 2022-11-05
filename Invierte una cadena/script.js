@@ -183,15 +183,14 @@
     {
         String.prototype.invertirCadena = function () {
             console.log(this);
-            let newString = "";
+            let invertido = "";
             for (let i = this.length - 1; i >= 0; i--) {
-                newString += this[i];
-                console.log(newString);
+                invertido += this[i];
+                console.log(invertido);
             }
-            return newString;
+            return invertido;
         };
         'Zambrano'.invertirCadena()
-
     }
 
 
