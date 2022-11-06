@@ -146,21 +146,22 @@
         // ? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 
         String.prototype.invertirCadena = function () {
-            console.log(this);
-            console.log([this]);
-            console.log([...this]);
-            console.log(this.split(""));
-            console.log(this.split("") == [...this]);
-            console.log('ivor'.length);
+            //             console.log(this);
+            //             console.log([this]);
+            //             console.log([...this]);
+            //             console.log(this.split(""));
+            //             console.log(this.split("") == [...this]);
+            //             console.log('ivor'.length);
+            // 
+            // 
+            //             console.log("-------------");
+            // 
+            //             console.log(...'guzman');
+            //             console.log([...'guzman']);
+            //             console.log({ ...'guzman' });
 
-
-            console.log("-------------");
-
-            console.log(...'guzman');
-            console.log([...'guzman']);
-            console.log({ ...'guzman' });
-
-
+            let invertido = "";
+            
 
         };
         'ivor'.invertirCadena();
@@ -172,29 +173,50 @@
 
 
     {
+        //?  Solucón 2
+
         console.log(this);
 
         String.prototype.invertirCadena = function () {
-
-
             console.log([...this].reverse().join(""));
-
         };
         'ivor'.invertirCadena();
         console.log("ivor".length);;
         // 'pedro'.invertirCadena2();
     }
 
+
     {
+        // ? Solución 3
+
+        String.prototype.invertirCadena = function () {
+            // console.log(this);
+            let invertido = [];
+            let contador = 0;
+            for (let i = this.length - 1; i >= 0; i--) {
+                console.log(this[i]);
+                invertido[contador += 1] = this[i];
+                console.log(invertido);
+            }
+            return invertido.join("");
+        };
+        console.log('Zambrano'.length);
+        console.log('Zambrano'.invertirCadena());
+    }
+
+    {
+        // ? Solución 4
+
         String.prototype.invertirCadena = function () {
             console.log(this);
             let invertido = "";
             for (let i = this.length - 1; i >= 0; i--) {
-                invertido += this[i];
                 console.log(invertido);
+                invertido += this[i];
             }
             return invertido;
         };
-        'Zambrano'.invertirCadena();
+        console.log('Zambrano'.length);
+        console.log('Zambrano'.invertirCadena());
     }
 }
