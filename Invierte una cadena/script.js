@@ -136,26 +136,14 @@
 }
 
 {
-    //!Metodo 4  agregandolo como  metodo a el Objeto String.  for tradicional
+    //!Metodo 4  agregandolo como  metodo a el Objeto String
 
     {
-        //? Solucion 1 sin aplicar metodos de array. (con acumulador)
+        //? Solucion 1 
 
         //? https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects
 
         // ? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
-
-        String.prototype.invertirCadena = function () {
-
-        };
-        'ivor'.invertirCadena();
-        'pedro'.invertirCadena();
-    }
-}
-{
-    //!Metodo 4  agregandolo como  metodo a el Objeto String
-    {
-        console.log(this);
 
         String.prototype.invertirCadena = function () {
             console.log(this);
@@ -171,6 +159,23 @@
             console.log(...'guzman');
             console.log([...'guzman']);
             console.log({ ...'guzman' });
+
+
+
+        };
+        'ivor'.invertirCadena();
+        'pedro'.invertirCadena();
+    }
+
+
+
+
+
+    {
+        console.log(this);
+
+        String.prototype.invertirCadena = function () {
+
 
             console.log([...this].reverse().join(""));
 
@@ -190,8 +195,6 @@
             }
             return invertido;
         };
-        'Zambrano'.invertirCadena()
+        'Zambrano'.invertirCadena();
     }
-
-
 }
