@@ -139,7 +139,7 @@
     //!Metodo 4  agregandolo como  metodo a el Objeto String
 
     {
-        //? Solucion 1 
+        //? Solucion  0
 
         //? https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects
 
@@ -161,7 +161,7 @@
             //             console.log({ ...'guzman' });
 
             let invertido = "";
-            
+
 
         };
         'ivor'.invertirCadena();
